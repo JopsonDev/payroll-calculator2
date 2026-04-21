@@ -21,7 +21,7 @@ public class Main {
 
                     Employee first = new Employee(id, name, hoursWorked, payRate);
 
-                    System.out.printf("ID: %d | Name: %s | Gross pay: %.2f%n", id, name, first.getGrossPay());
+                    System.out.printf("ID: %d | Name: %s | Gross pay: %.2f%n", first.getEmployeeId(), first.getName(), first.getGrossPay());
                 }
             } catch (Exception a) {
                 System.out.println("Oh no something went wrong...");
