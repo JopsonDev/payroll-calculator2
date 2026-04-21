@@ -44,4 +44,12 @@ public class Employee {
     public void setPayRate(double payRate) {
         this.payRate = payRate;
     }
+    public String toString() {
+        return String.format(
+                "ID: %d | Name: %s | Hours: %.2f | Payrate: %.2f",
+                employeeId, name, hoursWorked, payRate);
+    }
+    public double getGrossPay(){
+        return hoursWorked * payRate;
+    }
 }
